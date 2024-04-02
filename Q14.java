@@ -24,7 +24,7 @@ public class Q14 {
         double sinCosSum = sinX + cosX;
         double absSinCosSum = Math.abs(sinCosSum);
 
-        if(Math.abs(tanX - cotX) < 1e-10) {
+        if(Math.abs(tanX - cotX) < 1e-20) {
             throw new ArithmeticException("Division by zero is not allowed!! tan(x) - cot(x) is close to zero!");
         }
 
